@@ -1,0 +1,39 @@
+{
+    "INSERT":{
+        "QUERY_NAME":{
+            "TABLE":"TABLE_NAME",
+            "VALUES":{
+                "KEY": "VALUE"
+            },
+            "REJECTS":[
+                "MODEL_ATTRIBUTES",
+            ],
+            "RETURNING":"BOOL" | [
+                {
+                    "TABLE":"User",
+                    "Attributes":[
+                        "id"
+                    ]
+                }
+            ]
+        },
+    },
+    "SELECT":{
+        "QUERY_NAME":{
+            "TABLE":"TABLE_NAME",
+            "FILTER":{
+                "KEY":"VALUE",
+                "KEY":"VALUE"
+            },
+            "RETURNING":[
+                {
+                    "TABLE":"TABLE_NAME",
+                    "Attributes":[
+                        "KEY",
+                        "KEY",
+                    ]
+                }
+            ]
+        }
+    }
+}
